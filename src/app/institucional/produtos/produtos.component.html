@@ -10,8 +10,22 @@
                         width="100px" />
                     <br>
                     <br>
-                    <br>
-                    <h3>{{produto.valor | currency:'BRL':symbol:'1.2-2':'pt'}}</h3>
+
+                    <span [ngSwitch]="produto.promocao">
+                        <p *ngSwitchCase="true">PROMOÇÃO!</p>
+                        <p *ngSwitchCase="false">Por apenas:</p>
+                    </span>
+                    <span *ngIf="produto.promocao">
+                        <h3 class="text-success">
+                            <del class="text-danger"><small>De:
+                                    {{produto.valor | currency:'BRL':symbol:'1.2-2':'pt'}}</small></del>
+                            <br>
+                            Por: {{produto.valor | currency:'BRL':symbol:'1.2-2':'pt'}}
+                        </h3>
+                    </span>
+                    <span *ngIf="!produto.promocao">
+                        <h3>{{produto.valor | currency:'BRL':symbol:'1.2-2':'pt'}}</h3>
+                    </span>
                 </div>
                 <div class="card-footer text-center">
                     <a [routerLink]="['/detalhe-produto', produto.id]" class="btn btn-success">Comprar produto</a>

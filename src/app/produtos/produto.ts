@@ -5,5 +5,6 @@ export class Produto {
     public nome: string;
     public valor: number;
     public imagem: string;
+    public promocao: boolean;
     
 }

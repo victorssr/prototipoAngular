@@ -4,31 +4,36 @@
             "id": 1,
             "nome": "mouse e teclado",
             "valor": 100,
-            "imagem": "teste.jpg"
+            "imagem": "teste.jpg",
+            "promocao": true
         },
         {
             "id": 2,
             "nome": "teclado",
             "valor": 200,
-            "imagem": "teste.jpg"
+            "imagem": "teste.jpg",
+            "promocao": true
         },
         {
             "id": 3,
             "nome": "headset",
             "valor": 300,
-            "imagem": "teste.jpg"
+            "imagem": "teste.jpg",
+            "promocao": true
         },
         {
             "id": 4,
             "nome": "Monitor",
             "valor": 400,
-            "imagem": "teste.jpg"
+            "imagem": "teste.jpg",
+            "promocao": false
         },
         {
             "id": 5,
             "nome": "Caixa de Som",
             "valor": 500,
-            "imagem": "teste.jpg"
+            "imagem": "teste.jpg",
+            "promocao": false
         }
     ]
 }
