@@ -2,19 +2,19 @@
     "produtos": [
         {
             "id": 1,
-            "nome": "Mouse",
+            "nome": "mouse e teclado",
             "valor": 100,
             "imagem": "teste.jpg"
         },
         {
             "id": 2,
-            "nome": "Teclado",
+            "nome": "teclado",
             "valor": 200,
             "imagem": "teste.jpg"
         },
         {
             "id": 3,
-            "nome": "Headset",
+            "nome": "headset",
             "valor": 300,
             "imagem": "teste.jpg"
         },
