@@ -1,0 +1,33 @@
+<div class="container main-container">
+
+    <h3>Interpolation</h3>
+
+    <p [ngClass]="{
+        'text-success':contadorCliques < 3,
+        'text-primary':contadorCliques >= 3,
+        'text-warning':contadorCliques >= 7,
+        'text-danger':contadorCliques >= 9
+    }">
+        Você clicou {{contadorCliques}} vezes.
+    </p>
+
+    <br />
+    <br />
+
+    <h3>Property Binding</h3>
+    <button class="btn btn-info" [disabled]="contadorCliques <= 0">Info</button>
+
+    <br />
+    <br />
+
+    <h3>Event Binding</h3>
+    <button class="btn btn-success" (click)="somaClique();">Clique-me</button>
+    <button class="btn btn-danger" (click)="zeraCliques();" [disabled]="contadorCliques == 0">Zerar cliques</button>
+
+    <br />
+    <br />
+
+    <h3>Two way binding</h3>
+    <input class="form-control" placeholder="Preencha o seu nome completo!" [(ngModel)]="nome" />
+    <label [class]="nome">{{nome}}</label>
+</div>
